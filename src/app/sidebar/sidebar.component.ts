@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Renderer2 } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 
 
@@ -9,8 +9,13 @@ import { MenuItem } from 'primeng/api';
 })
 export class SidebarComponent {
   
+  
   isCollapsed = false;
 value: any;
+isSidebarOpen: boolean = false;
 
 
 }
+
+
+

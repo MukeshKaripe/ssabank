@@ -11,9 +11,7 @@
 .pi-list:before{
     cursor: pointer;
 }
-// .p-megamenu-grid.p-megamenu-col-6 {
-//     width: 28%;
-// }
+
 
 .p-megamenu .p-megamenu-submenu-header {
     margin: 0;
@@ -24,18 +22,114 @@
     width: 8.5rem !important;
 }
 
-.ant-menu-submenu-branches div .ng-star-inserted{
-    position: relative;
-    left: -11px ;
-  
-  }
-  .ant-menu-submenu-branches div .ant-menu-submenu-arrow::before {
-    position: absolute;
-    left: 65px;
-    top: -19px;
-  }
-  .ant-menu-submenu-branches div .ant-menu-submenu-arrow::after {
-    position: absolute;
-    left: 65px;
-    top: -19px;
-  }
+
+
+
+
+
+ .ant-menu-submenu-bankdetails  .ng-trigger-collapseMotion .ant-menu-item{
+    padding-left: 58px !important;
+}
+
+.ant-menu-submenu-branches .ant-menu-submenu-title {
+gap: 0px !important; 
+}
+.ant-layout-sider-collapsed   .ng-star-inserted {
+visibility: hidden;    
+}
+.ant-menu-submenu--heading{
+    margin-left: 25px;
+}
+.ant-menu-submenu-bankdetails .ant-menu-submenu-title{
+    padding-left: 47px !important;
+}
+.ant-menu-submenu-branches  .ng-trigger-collapseMotion  .ant-menu-item{
+    padding-left: 58px !important;
+     }
+     .ant-menu-submenu-branches .ant-menu-submenu-title{
+        padding-left: 36px !important;
+    }
+   .ant-menu-submenu-branches  .ant-menu.ant-menu-inline.ant-menu-sub.ng-tns-c4-1.ng-trigger.ng-trigger-collapseMotion.ng-star-inserted {
+        margin-left: -12px !important;
+    }
+//tab responsive starts here
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    .p-megamenu-horizontal .p-megamenu-root-list {
+        justify-content: space-between;
+    }
+    .p-megamenu .p-megamenu-root-list > .p-menuitem > .p-menuitem-link {
+        justify-content: center;}
+    .main-content-wrapper{
+        text-align: center;
+        font-size: 20px;
+    }
+    .account-activites-chart-second{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 0px !important;
+        width: auto !important;
+    }
+    
+
+    .account-activites-chart-first .p-card{
+        box-shadow: none ;
+
+    }
+    .branches-title{
+        text-align: center;
+        margin: 0px !important;
+    }
+    .p-megamenu-root-list>.p-menuitem {
+        position: relative;
+        width: 50%;
+    }
+  .p-card-images  button {
+        padding: 6px 10px;
+    }
+    .account-activites-chart-first   .p-card .p-card-body {
+        padding: 0rem ; 
+   }
+   .account-activites-chart-first   .p-card    .p-card-content{
+padding: 0rem;
+    }
+}
+//tab responsive ends here
+
+
+//mobile responsive starts here
+
+@media only screen and (max-width: 767px){
+
+    .account-activites-chart-first  .p-card {
+        box-shadow: none !important;
+      }
+      .account-activites-chart-first {
+        margin: 0 auto !important;
+            }
+      .account-activites-chart-first   .p-card .p-card-content {
+        padding: 0px 0px;
+    }
+    .account-activites-chart-first   .p-card .p-card-body {
+        padding: 0px;
+    }
+      .branches-details-block .p-megamenu-horizontal .p-megamenu-root-list {
+        justify-content: space-around;
+        
+    }
+
+   
+
+   .img-container-wrapper .p-card-images button {
+    font-size: 15px;
+}
+
+}
+
+.p-card-content .chartdata canvas{
+    height: 300px;
+}
+//mobile responsive ends here
+
+
+ 

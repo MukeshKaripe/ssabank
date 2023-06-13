@@ -1,59 +1,191 @@
-.grids{
-    gap: 10px;
-    display: flex;
-    
-    
-  }
-.newAcc{
+.grids {
+  gap: 10px;
+  display: flex;
+}
+.newAcc {
   border: 3px solid rgb(0, 4, 255);
   border-radius: 10px;
 }
-.account-activites-block{
+.account-activites-block {
   margin-top: 50px;
   justify-content: space-between;
   text-align: center;
 }
-.account-activites-block .accounts-title{
-  // padding-right: 50px;
-  width: 34%;
-  }
-  .account-activites-block .transaction-title{
-  // padding-left: 50px;
-width: 48%;
-text-align: left;
+.accounts-title {
+  text-align: center;
 }
-  .img-content-block{
-  background-color: rgb(120, 122, 247);;
-border-radius: 50%;
+.transaction-title {
+  text-align: center;
+  position: relative;
+  top: -49px;
+}
+.img-content-block {
+  background-color: rgb(120, 122, 247);
+  border-radius: 50%;
 
-    width: 90px;
-    height: 90px;
-    overflow: hidden;
-    margin: 0px auto  !important;
-  }
-  .img-content-block img{
-width: 100%;
-height: 100%;
-border-radius: 50%;
-object-fit: cover;
+  width: 90px;
+  height: 90px;
+  overflow: hidden;
+  margin: 0px auto !important;
+}
+.img-content-block img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.img-container-wrapper {
+  justify-content: space-between;
+}
+.surface-card-first {
+  background-color: #c4c4ff !important;
+}
+.surface-card-second {
+  background-color: #ffe9d5 !important;
+}
+.surface-card-third {
+  background-color: #d2e4eb !important;
+}
+.surface-card-fourth {
+  background-color: #d1b6eb !important;
+}
 
+//tab responsive starts here
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .transaction-wrapper {
+    flex-wrap: wrap;
+    margin-right: 0px !important;
+    justify-content: space-evenly;
   }
-  .img-container-wrapper{
+  .transaction-wrapper-block {
+    width: 47%;
+  }
+  .p-card-images {
+    width: 30%;
+  }
+  .img-container-wrapper {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .transaction-heading {
+    padding-top: 10px;
+
+    text-align: center;
+  }
+  .account-activites-block {
+    flex-wrap: wrap;
+  }
+  .account-activites-block .accounts-title {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0px;
+  }
+
+  .account-activites-block {
+    margin-top: 20px;
+  }
+  .transaction-title {
+    width: 100%;
+    margin: 20px 0px;
+    position: relative;
+    top: 0;
+  }
+  .account-activites-chart {
+    display: flex;
+    flex-direction: column;
+  }
+  .account-activites-chart-first {
+    margin: 0 auto;
+  }
+  .branches-details-block .p-megamenu-horizontal .p-megamenu-root-list {
     justify-content: space-between;
   }
-  .surface-card-first {
-    background-color:#c4c4ff!important;
-    
+  .heading-wrapper-content {
+    margin-top: -5px;
+  }
+  .amounttransfer-title {
+    font-size: 22px;
+    text-align: center;
+    margin: 15px 0px;
+  }
+  .accounts-title{
+    margin-top: 25px;
+  }
+}
+//tab responsive ends here
+
+//mobile responsive starts here
+
+@media only screen and (max-width: 767px) {
+  .transaction-heading {
+    padding-top: 10px;
+
+    text-align: center;
+    font-size: 15px;
+  }
+  .p-card-images-first .p-card .p-card-body {
+    padding: 0rem;
+  }
+  .transaction-wrapper {
+    flex-direction: column;
+    margin-right: 0px !important;
+    gap: 5px;
+  }
+  .account-activites-block {
+    margin-top: 20px;
+    flex-direction: column;
+  }
+  .account-activites-block .accounts-title {
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+  }
+  .transaction-title {
+    font-size: 17px;
+    top: 0;
+    padding: 15px 0px;
+    width: 100% !important;
+    text-align: center !important ;
+  }
+  .accounts-title {
+    text-align: center;
+    font-size: 17px;
+  }
+  .account-activites-chart {
+    display: flex;
+    flex-direction: column;
+  }
  
-    
+
+  .account-activites-chart-second {
+    width: 100% !important;
+    height: auto !important;
+    margin: 0px !important;
   }
-  .surface-card-second{
-background-color: #ffe9d5!important;
+  .branches-title {
+    font-size: 17px;
+    text-align: center;
   }
-  .surface-card-third{
-    background-color: #d2e4eb !important;
+  .amounttransfer-title {
+    margin-top: 20px;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 20px;
   }
-  .surface-card-fourth {
-    background-color: #d1b6eb !important;
+  .img-container-wrapper {
+    flex-wrap: wrap;
   }
- 
+  .img-container-wrapper .p-card-images {
+    width: 46%;
+    margin: 10px 5px;
+  }
+  .img-container-wrapper .p-card-images button {
+    padding: 6px 8px;
+  }
+
+  .amount-cus {
+    font-size: 18px;
+  }
+}
+//mobile responsive ends here
