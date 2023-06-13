@@ -1,0 +1,121 @@
+.trigger {
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 24px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  .img-icon-bank{
+    cursor: pointer;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+  }
+  .ant-layout-sider-collapsed  
+  .img-icon-bank{
+    cursor: pointer;
+
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: -4px;
+    // margin: 0 auto;
+    
+    padding: 10px 0px;
+  }
+  .trigger:hover {
+    color: #1890ff;
+  }
+
+  .logo img {
+    height: 32px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 16px;
+    border-radius: 5px;
+    margin: 20px 20px;
+    width: 50px;
+    height: 100px;
+
+  }
+
+  nz-header {
+    background: #fff;
+    padding: 0;
+  }
+
+  nz-content {
+    margin: 0 16px;
+  }
+
+  nz-breadcrumb {
+    margin: 16px 0;
+  }
+
+  .inner-content {
+    padding: 24px;
+    background: #fff;
+    min-height: 360px;
+  }
+
+  nz-footer {
+    text-align: center;
+  }
+
+ 
+.box{
+    position: relative;
+}
+.icons{
+  position: absolute;
+  margin-left: 26px;
+  margin-top: 17px;
+}
+.heading-wrapper{
+  width: 100%;
+  justify-content: space-between;
+}
+.heading-wrapper h1{
+  padding-right: 20px;
+}
+.heading-wrapper-content{
+  width: 41%;
+}
+.ant-layout-sider-collapsed .sider-image-highlight{
+position: relative;
+left: 5px;
+bottom: 0;
+
+
+}
+.ant-menu-submenu-branches{
+  overflow: hidden;
+}
+.ant-menu-submenu-branches .ant-menu-item-selected {
+  width: 197px;
+  // position: relative;
+  // left: 11px;
+  overflow: hidden;
+
+}
+.ant-layout-sider-collapsed .ant-menu-submenu--heading{
+display: none !important;
+}
+
+.ant-menu-submenu-contact-block{
+  overflow: hidden;
+} 
+
+
+
+.ant-menu-submenu-contact-block
+ .ant-menu-sub {
+  background: #000c17;
+  position: relative;
+  left: -5px;
+}
+.ant-menu-submenu-branches
+.ant-menu-inline{
+  // width: 196px;
+  // position: relative;
+  // left: -12px; 
+}
